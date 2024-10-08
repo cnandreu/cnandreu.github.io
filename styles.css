@@ -1,0 +1,123 @@
+@media print {
+    body {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 12px;
+    }
+
+    body h1 {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0;
+        margin: -1px;
+    }
+
+    body h2 {
+        font-size: 12px;
+    }
+
+    body h3,
+    body p {
+        font-size: 12px;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    body .skills-grid,
+    body .technical-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .page-break-after {
+        page-break-after: always;
+        break-after: always;
+    }
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.resume-container {
+    max-width: 670px;
+    margin: 16px auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+h3 span {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.skills-grid,
+.technical-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .skills-grid,
+    .technical-grid {
+        grid-template-columns: 1fr;
+    }
+}
